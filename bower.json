@@ -1,0 +1,23 @@
+{
+  "name": "polyfill-passive-touch-events",
+  "homepage": "https://github.com/cadwmaster/polyfill-passive-touch-events",
+  "authors": [
+    "Christian Andrade <cadwmaster@gmail.com>"
+  ],
+  "description": "Polyfill for passive options on touch events",
+  "main": "passive-touch-events.js",
+  "keywords": [
+    "polyfill",
+    "touch-events",
+    "events",
+    "violation"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
