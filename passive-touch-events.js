@@ -2,9 +2,11 @@
 	let supportsPassive = false;
 	try {
 		const opts = Object.defineProperty({}, 'passive', {
-			get() { supportsPassive = true; },
+			get: function () {  
+				supportsPassive = true; 
+			}
 		});
-		const noop = () => {};
+		const noop = function () {};
 		window.addEventListener('testPassiveEventSupport', noop, opts);
 		window.removeEventListener('testPassiveEventSupport', noop, options);
 	} catch (e) {}
