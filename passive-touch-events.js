@@ -1,5 +1,5 @@
 (function () {
-	let supportsPassive = false;
+	var supportsPassive = false;
 	try {
 		const opts = Object.defineProperty({}, 'passive', {
 			get: function () {  
@@ -12,7 +12,7 @@
 	} catch (e) {}
 
 	if (supportsPassive) {
-		let f = EventTarget.prototype.addEventListener;
+		var f = EventTarget.prototype.addEventListener;
 		EventTarget.prototype.addEventListener = function (type, fn, capture) {
 			this.f = f;
 			capture = capture || false;
